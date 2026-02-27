@@ -60,6 +60,26 @@
             min-width: 100%;
         }
     </style>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '942288352080454');
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=942288352080454&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
 </head>
 <body class="visio-bg-dark text-white leading-normal">
 
@@ -354,7 +374,7 @@
         const formTitle = document.getElementById('formTitle');
 
         // Your SheetDB endpoint
-        const SHEETDB_URL = 'https://sheetdb.io/api/v1/grrdk6e7qngyg';
+        const SHEETDB_URL = 'https://sheetdb.io/api/v1/3c9f1hvlyx64o';
 
         function makeLeadId() {
             // Unique enough for lead tracking + anti-duplicate workflows
@@ -395,4 +415,3 @@
 
 </body>
 </html>
-
