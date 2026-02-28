@@ -71,12 +71,12 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '942288352080454');
+    fbq('init', '951527241162507');
     fbq('track', 'PageView');
     </script>
     <noscript>
       <img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=942288352080454&ev=PageView&noscript=1"/>
+      src="https://www.facebook.com/tr?id=951527241162507&ev=PageView&noscript=1"/>
     </noscript>
     <!-- End Meta Pixel Code -->
 
@@ -374,7 +374,7 @@
         const formTitle = document.getElementById('formTitle');
 
         // Your SheetDB endpoint
-        const SHEETDB_URL = 'https://sheetdb.io/api/v1/3c9f1hvlyx64o';
+        const SHEETDB_URL = 'https://sheetdb.io/api/v1/6auo3pejrqsap';
 
         function makeLeadId() {
             // Unique enough for lead tracking + anti-duplicate workflows
@@ -397,8 +397,22 @@
             fetch(SHEETDB_URL, {
                 method: 'POST',
                 body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
             })
-            .then(response => response.json())
+            .then(async (response) => {
+                // SheetDB will often return JSON; if rate-limited or misconfigured, it may return HTML/text.
+                const text = await response.text();
+                if (!response.ok) {
+                    throw new Error(`SheetDB error ${response.status}: ${text}`);
+                }
+                try {
+                    return JSON.parse(text);
+                } catch (_) {
+                    return { ok: true, raw: text };
+                }
+            })
             .then(() => {
                 form.classList.add('hidden');
                 formTitle.classList.add('hidden');
@@ -406,6 +420,7 @@
             })
             .catch(error => {
                 console.error('Erreur:', error);
+                alert("Erreur d'envoi. Ouvre F12 → Console, copie l'erreur, puis réessaie.");
                 submitBtn.disabled = false;
                 submitBtn.innerText = "ERREUR - RÉESSAYER";
                 submitBtn.style.opacity = "1";
