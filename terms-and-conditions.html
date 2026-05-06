@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conditions d'utilisation — Visioplan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent: #0085CA;
+      --accent2: #78BE20;
+      --bg: #000;
+      --bg2: #0a0a0a;
+      --bg3: #111;
+      --text: #e4e4e7;
+      --text-muted: #71717a;
+      --border: rgba(255,255,255,0.05);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(0,0,0,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-size: 1.1rem;
+      font-weight: 900;
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: -0.03em;
+    }
+    .nav-logo span { color: var(--accent); }
+
+    .nav-back {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .nav-back:hover { color: #fff; }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 64px 24px 96px;
+    }
+
+    .page-header {
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .page-header h1 {
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+    }
+
+    .page-header .meta {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+    }
+
+    .page-header .meta span { color: var(--accent); }
+
+    section { margin-bottom: 44px; }
+
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 14px;
+      padding-left: 14px;
+      border-left: 3px solid var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    p {
+      color: var(--text);
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+    }
+
+    ul { list-style: none; padding: 0; margin: 0 0 12px; }
+
+    ul li {
+      font-size: 0.95rem;
+      color: var(--text);
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: var(--accent2);
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    strong { color: #fff; font-weight: 600; }
+
+    .highlight-box {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin: 20px 0;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+    }
+
+    footer a { color: var(--text-muted); text-decoration: none; }
+    footer a:hover { color: #fff; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="./" class="nav-logo">Visio<span>plan</span></a>
+    <a href="./" class="nav-back">← Retour</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="page-header">
+      <h1>Conditions d'utilisation</h1>
+      <p class="meta">
+        Dernière mise à jour : <span>6 mai 2026</span> &nbsp;·&nbsp; Visioplan
+      </p>
+    </div>
+
+    <section>
+      <h2>1. Objet et acceptation</h2>
+      <p>
+        Les présentes conditions d'utilisation régissent l'accès et l'utilisation du site web
+        <strong>visioplanqc.github.io/visioplan.github.io</strong>, exploité par <strong>Visioplan</strong>
+        (ci-après « le Site »), basé au Québec, Canada.
+      </p>
+      <p>
+        En accédant au Site, vous acceptez sans réserve les présentes conditions.
+        Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser le Site.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Services offerts</h2>
+      <p>
+        Visioplan offre des services de <strong>visualisation 3D d'aménagement paysager</strong>,
+        incluant des rendus photoréalistes, des simulations d'éclairage nocturne, des visites virtuelles
+        et des plans 2D techniques pour des projets résidentiels au Québec.
+      </p>
+      <p>
+        Le Site permet aux visiteurs de soumettre une demande de soumission.
+        La soumission d'un formulaire ne constitue pas un contrat de service.
+        Tout contrat de service fait l'objet d'une entente distincte entre Visioplan et le client.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. Propriété intellectuelle</h2>
+      <p>
+        Tous les rendus 3D, plans, images et livrables produits par Visioplan dans le cadre d'un mandat
+        sont la <strong>propriété exclusive de Visioplan</strong> jusqu'au paiement intégral du service.
+        À réception du paiement, les droits d'utilisation sont transférés au client conformément
+        à l'entente de service convenue.
+      </p>
+      <p>
+        Le contenu du Site (textes, images, structure) est la propriété de Visioplan.
+        Toute reproduction sans autorisation écrite est interdite.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Données personnelles</h2>
+      <p>
+        La collecte et l'utilisation de vos renseignements personnels sont régies par notre
+        <a href="./politique-de-confidentialite.html">Politique de confidentialité</a>,
+        conforme à la Loi 25 (Québec) et à la LPRPDE (fédéral).
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Exactitude des informations</h2>
+      <p>
+        Les informations présentées sur le Site (délais, forfaits, zones de service) sont fournies
+        à titre indicatif et peuvent être modifiées sans préavis. Visioplan ne garantit pas
+        l'exactitude complète des informations à tout moment.
+      </p>
+      <p>
+        Les témoignages présentés reflètent les expériences personnelles de clients réels.
+        Les résultats peuvent varier selon le projet.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Limitation de responsabilité</h2>
+      <p>
+        Visioplan ne saurait être tenu responsable de :
+      </p>
+      <ul>
+        <li>Toute interruption ou indisponibilité du Site</li>
+        <li>Tout dommage indirect résultant de l'utilisation du Site</li>
+        <li>Toute décision prise sur la base des informations du Site sans validation par un contrat de service</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. Liens externes</h2>
+      <p>
+        Le Site peut contenir des liens vers des sites tiers (ex. : visioplan.ca).
+        Visioplan n'est pas responsable du contenu de ces sites et n'endosse pas leur politique
+        de confidentialité ou leurs pratiques.
+      </p>
+    </section>
+
+    <section>
+      <h2>8. Modifications</h2>
+      <p>
+        Visioplan se réserve le droit de modifier les présentes conditions à tout moment.
+        Les modifications entrent en vigueur dès leur publication.
+        La date de « Dernière mise à jour » sera actualisée en conséquence.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. Droit applicable</h2>
+      <p>
+        Les présentes conditions sont régies par les lois en vigueur au <strong>Québec, Canada</strong>.
+        Tout litige sera soumis à la compétence exclusive des tribunaux québécois.
+      </p>
+
+      <div class="highlight-box">
+        Pour toute question, contactez-nous à
+        <a href="mailto:info@visioplan.ca">info@visioplan.ca</a> ou au
+        <a href="tel:4189065356">418 906-5356</a>.
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2026 VISIOPLAN &nbsp;·&nbsp;
+    <a href="./">Retour à l'accueil</a>
+    &nbsp;·&nbsp;
+    <a href="./politique-de-confidentialite.html">Politique de confidentialité</a>
+  </footer>
+
+</body>
+</html>

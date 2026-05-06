@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Politique de confidentialité — Visioplan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent: #0085CA;
+      --accent2: #78BE20;
+      --bg: #000;
+      --bg2: #0a0a0a;
+      --bg3: #111;
+      --text: #e4e4e7;
+      --text-muted: #71717a;
+      --border: rgba(255,255,255,0.05);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(0,0,0,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-size: 1.1rem;
+      font-weight: 900;
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: -0.03em;
+    }
+    .nav-logo span { color: var(--accent); }
+
+    .nav-back {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .nav-back:hover { color: #fff; }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 64px 24px 96px;
+    }
+
+    .page-header {
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .page-header h1 {
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+    }
+
+    .page-header .meta {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+    }
+
+    .page-header .meta span { color: var(--accent); }
+
+    section { margin-bottom: 44px; }
+
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 14px;
+      padding-left: 14px;
+      border-left: 3px solid var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    p {
+      color: var(--text);
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+    }
+
+    ul { list-style: none; padding: 0; margin: 0 0 12px; }
+
+    ul li {
+      font-size: 0.95rem;
+      color: var(--text);
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: var(--accent2);
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    strong { color: #fff; font-weight: 600; }
+
+    .highlight-box {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin: 20px 0;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+    }
+
+    footer a { color: var(--text-muted); text-decoration: none; }
+    footer a:hover { color: #fff; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="./" class="nav-logo">Visio<span>plan</span></a>
+    <a href="./" class="nav-back">← Retour</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="page-header">
+      <h1>Politique de confidentialité</h1>
+      <p class="meta">
+        Dernière mise à jour : <span>6 mai 2026</span> &nbsp;·&nbsp; Visioplan
+      </p>
+    </div>
+
+    <section>
+      <h2>1. Responsable du traitement</h2>
+      <p>
+        La présente politique s'applique au site web <strong>visioplanqc.github.io/visioplan.github.io</strong>,
+        exploité par <strong>Visioplan</strong>, dont le siège est au Québec, Canada.
+      </p>
+      <p>
+        Pour toute question relative à vos renseignements personnels :
+        <a href="mailto:info@visioplan.ca">info@visioplan.ca</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Renseignements collectés</h2>
+      <p>Lorsque vous soumettez le formulaire de demande de soumission, nous collectons :</p>
+      <ul>
+        <li>Prénom et nom</li>
+        <li>Numéro de téléphone</li>
+        <li>Adresse courriel</li>
+        <li>Adresse du projet</li>
+        <li>Type de projet et budget approximatif</li>
+      </ul>
+      <p>Nous ne collectons <strong>aucune information de paiement</strong> via ce formulaire.</p>
+    </section>
+
+    <section>
+      <h2>3. Finalités de la collecte</h2>
+      <p>Vos renseignements sont utilisés exclusivement pour :</p>
+      <ul>
+        <li>Vous contacter afin de donner suite à votre demande de soumission</li>
+        <li>Préparer une offre de service adaptée à vos besoins</li>
+        <li>Communiquer des informations pertinentes à votre projet</li>
+      </ul>
+      <p>Vos renseignements ne sont <strong>jamais vendus, loués ou échangés</strong> avec des tiers à des fins commerciales.</p>
+    </section>
+
+    <section>
+      <h2>4. Base légale et consentement</h2>
+      <p>
+        En soumettant le formulaire, vous consentez expressément à ce que <strong>Visioplan</strong>
+        collecte et utilise vos renseignements aux fins décrites, conformément à la
+        <em>Loi 25</em> (Québec) et à la <em>LPRPDE</em> (fédéral).
+      </p>
+      <p>Vous pouvez retirer votre consentement en tout temps en nous écrivant à <a href="mailto:info@visioplan.ca">info@visioplan.ca</a>.</p>
+    </section>
+
+    <section>
+      <h2>5. Conservation et sécurité</h2>
+      <p>
+        Vos renseignements sont conservés dans un registre sécurisé (Google Sheets, accès restreint)
+        pour une durée maximale de <strong>12 mois</strong> suivant votre demande, ou jusqu'à ce que
+        vous demandiez leur suppression.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Communication à des tiers</h2>
+      <p>Vos renseignements peuvent être transmis à :</p>
+      <ul>
+        <li><strong>Google LLC</strong> — stockage sécurisé dans Google Sheets</li>
+        <li><strong>SheetDB</strong> — service intermédiaire de transmission de formulaire vers Google Sheets</li>
+      </ul>
+      <p>Ces fournisseurs agissent à titre de sous-traitants soumis à des obligations de confidentialité.</p>
+    </section>
+
+    <section>
+      <h2>7. Pixels et technologies de suivi</h2>
+      <p>
+        Ce site peut utiliser le <strong>Pixel Meta (Facebook)</strong> pour mesurer l'efficacité
+        de nos publicités. Ce pixel collecte des données anonymisées sur les visites et conversions.
+        Aucune information personnellement identifiable n'est transmise à Meta sans votre consentement explicite.
+      </p>
+      <p>
+        Vous pouvez désactiver le suivi dans les paramètres de votre compte Facebook / Instagram
+        ou via les paramètres de confidentialité de votre navigateur.
+      </p>
+    </section>
+
+    <section>
+      <h2>8. Vos droits (Loi 25)</h2>
+      <ul>
+        <li><strong>Droit d'accès</strong> — obtenir une copie de vos renseignements</li>
+        <li><strong>Droit de rectification</strong> — corriger tout renseignement inexact</li>
+        <li><strong>Droit à l'effacement</strong> — demander la suppression de vos renseignements</li>
+        <li><strong>Droit à la portabilité</strong> — recevoir vos renseignements dans un format lisible</li>
+        <li><strong>Droit d'opposition</strong> — vous opposer à certains traitements</li>
+      </ul>
+
+      <div class="highlight-box">
+        Pour exercer ces droits, écrivez-nous à
+        <a href="mailto:info@visioplan.ca">info@visioplan.ca</a>.
+        Nous traiterons votre demande dans un délai de <strong>30 jours</strong>.
+      </div>
+    </section>
+
+    <section>
+      <h2>9. Modifications</h2>
+      <p>
+        Nous nous réservons le droit de modifier cette politique en tout temps.
+        La date de « Dernière mise à jour » sera actualisée en cas de changement.
+      </p>
+    </section>
+
+    <section>
+      <h2>10. Nous joindre</h2>
+      <ul>
+        <li>Courriel : <a href="mailto:info@visioplan.ca">info@visioplan.ca</a></li>
+        <li>Téléphone : <a href="tel:4189065356">418 906-5356</a></li>
+      </ul>
+      <p>
+        Pour toute plainte non résolue, vous pouvez vous adresser à la
+        <strong>Commission d'accès à l'information du Québec (CAI)</strong> :
+        <a href="https://www.cai.gouv.qc.ca" target="_blank" rel="noopener">www.cai.gouv.qc.ca</a>
+      </p>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2026 VISIOPLAN &nbsp;·&nbsp;
+    <a href="./">Retour à l'accueil</a>
+    &nbsp;·&nbsp;
+    <a href="./terms-and-conditions.html">Conditions d'utilisation</a>
+  </footer>
+
+</body>
+</html>
